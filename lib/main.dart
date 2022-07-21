@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:solid_test_task/presentation/screens/history/history_cubit.dart';
 import 'package:solid_test_task/presentation/screens/home/home_screen.dart';
 import 'package:solid_test_task/presentation/screens/home/home_cubit.dart';
 

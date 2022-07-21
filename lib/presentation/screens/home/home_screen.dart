@@ -13,6 +13,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  late HomeCubit _homeCubit;
+
   Future<void> _navigateToHistoryScreen() async {
     final RGBColor result = await Navigator.of(context).push(
       MaterialPageRoute(
