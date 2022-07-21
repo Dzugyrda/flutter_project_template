@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:solid_test_task/color_manager.dart';
+import 'package:solid_test_task/manager/color_manager.dart';
 import 'package:solid_test_task/presentation/screens/history/history_state.dart';
 
 class HistoryCubit extends Cubit<HistoryState> {
@@ -7,8 +7,9 @@ class HistoryCubit extends Cubit<HistoryState> {
 
   HistoryCubit() : super(HistoryState(colorsHistory: []));
 
+  /// function for load colors history from ColorManager and display on HistoryScreen
   void loadColorsHistory() {
-    var colorsHistory = _colorManager.getColorsHistory();
+    final colorsHistory = _colorManager.getColorsHistory();
     emit(HistoryState(colorsHistory: colorsHistory));
   }
 }

@@ -1,4 +1,5 @@
-import 'package:solid_test_task/rgb_color.dart';
+import 'package:solid_test_task/model/rgb_color.dart';
+
 
 class HomeState {
   final RGBColor backgroundColor;
